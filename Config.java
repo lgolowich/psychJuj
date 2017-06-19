@@ -14,6 +14,7 @@ public class Config
 	// Add the players to the game
 	// players.add(new Person());
 	players.clear();
+	players.add(new Person());
 	players.add(new Dumbot());
 	players.add(new Simplebot());
     }
