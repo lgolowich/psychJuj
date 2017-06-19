@@ -3,7 +3,7 @@ import java.io.*;
 
 public abstract class Player
 {
-    protected List<Integer> cards;
+    private List<Integer> cards;
     private int score;
     
     public Player()
