@@ -41,12 +41,19 @@ public class Main
     
     public static void main(String[] args)
     {
-	// int numTests = 10000;
-	// List<Integer> numWins = runTests(numTests);
-	// System.out.println(numWins);
-	// System.out.println((double)numWins.get(0) / (numWins.get(0) + numWins.get(1)));
-
-	printTest();
+	Config.initVars();
+	if (Config.getAction().equals("Test")) {
+	    int numTests = 10000;
+	    List<Integer> numWins = runTests(numTests);
+	    System.out.println(numWins);
+	    System.out.println((double)numWins.get(0) / (numWins.get(0) + numWins.get(1)));
+	}
+	else if (Config.getAction().equals("Print")) {
+	    printTest();
+	}
+	else {
+	    System.out.println("Error: action \"" + Config.getAction() + "\" not found.");
+	}
     }
 }
 
