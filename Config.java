@@ -16,7 +16,7 @@ public class Config
 	players.clear();
 	players.add(new Person());
 	players.add(new Dumbot());
-	players.add(new Simplebot());
+	// players.add(new Simplebot());
     }
 
     public static int getNumCards()
